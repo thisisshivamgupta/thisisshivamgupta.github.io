@@ -4,6 +4,7 @@ import GitHubSnakeGraph from "@/components/Github/GitHubSnakeGraph";
 import { homePageData, projectsData } from "@/lib/data";
 import { LampDemo } from "@/components/LampDemo";
 import ProjectCard from "@/components/Projects/ProjectCard";
+import React from "react";
 
 
 
@@ -13,7 +14,10 @@ export default function HomePage() {
       <LampDemo />
 
       <div className="mt-0 px-10">
-        <GitHubSnakeGraph />
+        {/* 2. Wrap the graph in Suspense */}
+        <React.Suspense fallback={<div className="h-32 w-full bg-accent animate-pulse rounded-lg" />}>
+          <GitHubSnakeGraph />
+        </React.Suspense>
       </div>
 
       <div className="p-10">
