@@ -9,6 +9,15 @@
 
 🌐 **Live Site:** [thisisshivamgupta.github.io](https://thisisshivamgupta.github.io)
 
+
+---
+
+## 📸 Live Site Preview
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/thisisshivamgupta/thisisshivamgupta.github.io/preview.png" alt="Screenshot of Shivam Gupta's Dark Mode Developer Portfolio" width="90%" />
+</p>
+
 ---
 
 ## ✨ Features
