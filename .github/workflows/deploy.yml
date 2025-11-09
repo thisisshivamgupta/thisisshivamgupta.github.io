@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -33,9 +33,13 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Disable Jekyll
+        run: touch ./out/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          name: my-pages-artifact
           path: ./out
 
   deploy:
@@ -48,3 +52,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: my-pages-artifact
