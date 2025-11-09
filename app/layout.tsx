@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: "Shivam Gupta | Professional Portfolio",
   description: "A portfolio showcasing professional work and services.",
   icons: {
-    icon: "/public/me.jpg", // Path to your new icon in the 'public' folder
+    icon: "/public/favicon.ico", // Path to your new icon in the 'public' folder
   },
 };
 
