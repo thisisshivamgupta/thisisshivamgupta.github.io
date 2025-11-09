@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // 1. Enable Static HTML Export
   output: "export",
+  generateEtags: false,
   
   // 2. Disable Image Optimization (GitHub Pages doesn't support the Next.js image server)
   images: {
